@@ -1,0 +1,30 @@
+@import "../utilities/breakpoints";
+
+.club {
+	background: linear-gradient(
+		180deg,
+		rgba(147, 148, 88, 0.06) 0%,
+		rgba(196, 196, 196, 0) 100%
+	);
+	.row {
+		padding: 100px 100px 40px;
+		p {
+			padding-top: 1rem;
+			color: #979797;
+		}
+	}
+	h4 {
+		font-size: 2rem;
+		color: #979797;
+		font-weight: 400;
+	}
+	h2 {
+		font-size: 42px;
+	}
+	.container p {
+		color: #707070;
+		font-size: 16px;
+		line-height: 23px;
+		font-weight: $nunito;
+	}
+}

@@ -1,0 +1,29 @@
+@import "./utilities/variables";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./components/carousel";
+@import "./layout/featured";
+@import "./layout/topbrands";
+@import "./layout/categories";
+@import "./layout/cta";
+@import "./layout/gift";
+@import "./layout/footer";
+@import "./layout/club";
+@import "./utilities/breakpoints";
+@import "./layout/cartpage";
+body {
+	height: 100vh;
+	font-family: $roboto;
+	line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}

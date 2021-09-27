@@ -1,0 +1,74 @@
+@import "../utilities/variables";
+@import "../utilities/breakpoints";
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+	background: #ffc82c;
+	border-radius: 4px;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	background: #ffc82c;
+	border-radius: 4px;
+}
+.custom-control-input {
+	width: 4rem;
+	height: 4rem;
+}
+.custom-control-label {
+	padding: 1rem 3rem 2rem;
+	margin-bottom: 0;
+	vertical-align: top;
+	font-family: $nunito;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 145.6%;
+	/* identical to box height, or 23px */
+
+	/* Gray 4 */
+
+	color: #495057;
+}
+.custom-control-label::before {
+	top: 0.75rem;
+	left: 0rem;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	pointer-events: none;
+	content: "";
+	font-family: $nunito;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 145.6%;
+	/* identical to box height, or 23px */
+
+	/* Gray 4 */
+
+	color: #495057;
+	background-color: #fff;
+}
+.custom-control-label::after {
+	top: 0.75rem;
+	left: 0rem;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	content: "";
+	background: no-repeat 50%/50% 50%;
+	font-family: $nunito;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 145.6%;
+	/* identical to box height, or 23px */
+
+	/* Gray 4 */
+
+	color: #495057;
+}
+.custom-control {
+	z-index: 1;
+	display: block;
+	min-height: 1.5rem;
+	padding-left: 1.5rem;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact;
+}

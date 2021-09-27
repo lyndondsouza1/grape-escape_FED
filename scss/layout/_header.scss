@@ -1,0 +1,20 @@
+@import "../utilities/variables";
+
+.navbar-nav {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+	background: $primary-color;
+
+	.nav-link {
+		color: $secondary-color;
+	}
+	a:nth-of-type(5) {
+		margin-left: auto;
+	}
+
+	a:nth-of-type(4) {
+		margin-left: auto;
+	}
+}

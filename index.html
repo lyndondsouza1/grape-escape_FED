@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f5ec34d7b0.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>taskhomepage</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg p-0">
+			<button
+				class="navbar-toggler bg-dark"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse p-0" id="navbarNavAltMarkup">
+				<div class="navbar-nav px-5">
+					<a class="nav-link active px-5" href="#"
+						>Red Wine <span class="sr-only">(current)</span></a
+					>
+					<a class="nav-link px-5" href="#"> White Wine</a>
+					<a class="nav-link px-5" href="#">Rose</a>
+					<a class="nav-link px-5" href="#"
+						><img src="./assets/images/header.png" alt=""
+					/></a>
+
+					<a class="nav-link px-5" href="#">Search</a>
+					<a class="nav-link px-5" href="#">Sign In</a>
+					<a class="nav-link px-5" href="./cartpage.html">
+						<i class="fas fa-shopping-cart"></i
+					></a>
+				</div>
+			</div>
+		</nav>
+		<!-- hero banner -->
+		<section class="hero p-0">
+			<div class="container-fluid p-0">
+				<img class="p-0" src="./assets/images/Home1.png" alt="" />
+			</div>
+		</section>
+
+		<!-- Best SEllers CAROUSEL -->
+		<section class="topbrands pt-5">
+			<div class="glide container-xl">
+				<div class="glide-header">
+					<h3>Best Sellers</h3>
+					<div class="glide__arrows d-flex" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<div class="glide__bullets" data-glide-el="controls[nav]">
+							<button class="glide__bullet" data-glide-dir="=0">
+								<i class="fas fa-circle"></i>
+							</button>
+							<button class="glide__bullet" data-glide-dir="=1">
+								<i class="far fa-circle"></i>
+							</button>
+							<button class="glide__bullet" data-glide-dir="=2">
+								<i class="far fa-circle"></i>
+							</button>
+						</div>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="glide__track p-0 m-0" data-glide-el="track">
+					<ul class="glide__slides p-0">
+						<li class="glide__slide p-0 mx-3">
+							<div class="card border-0 text-center carousel-card">
+								<div class="img-container">
+									<img
+										src="./assets/images/bestseller1.png"
+										alt="Bran caia 2018"
+									/>
+								</div>
+
+								<div class="card-body">
+									<p class="card-text">Bran Caia 2018</p>
+									<p class="price">$199</p>
+									<a href="#" class="nooutline">Add to Cart</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide p-0 mx-3">
+							<div class="card border-0 text-center carousel-card">
+								<div class="img-container" style="background: #d4c3be">
+									<img
+										src="./assets/images/bestseller2.png"
+										alt="Vinologist Cabernet "
+									/>
+								</div>
+
+								<div class="card-body">
+									<p class="card-text">Vinologist Cabernet</p>
+									<p class="price">$299</p>
+									<a href="#" class="nooutline">Add to Cart</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide p-0 mx-3">
+							<div class="card border-0 text-center carousel-card">
+								<div class="img-container" style="background: #f4e8be">
+									<img
+										src="./assets/images/bestseller3.png"
+										alt="Scaia Rosato Veneto"
+									/>
+								</div>
+
+								<div class="card-body">
+									<p class="card-text">Scaia Rosato Veneto</p>
+									<p class="price">$399</p>
+									<a href="#" class="nooutline">Add to Cart</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide p-0 mx-3">
+							<div class="card border-0 text-center carousel-card">
+								<div class="img-container" style="background: #d4c3be">
+									<img
+										src="./assets/images/bestseller4.png"
+										alt="Pietrarizzo Etna Rosso"
+									/>
+								</div>
+
+								<div class="card-body">
+									<p class="card-text">Pietrarizzo Etna Rosso</p>
+									<p class="price">$499</p>
+									<a href="#" class="nooutline">Add to Cart</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Explore More -->
+		<section class="explore pt-5">
+			<div class="container-xl">
+				<h3>Explore Top Brands</h3>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 top-card">
+						<img src="./assets/images/topbrands1.png" alt="Top Brands" />
+					</div>
+					<div class="col-sm-6 col-md-3 top-card">
+						<img src="./assets/images/topbrands2.png" alt="Top Brands" />
+					</div>
+					<div class="col-sm-6 col-md-3 top-card">
+						<img src="./assets/images/topbrands3.png" alt="Top Brands" />
+					</div>
+					<div class="col-sm-6 col-md-3 top-card">
+						<img src="./assets/images/topbrands4.png" alt="Top Brands" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured Wines -->
+
+		<section class="featured pt-5">
+			<div class="container-xl">
+				<h3>Featured Wines</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card border-0">
+							<div
+								class="img-container text-center"
+								style="background: #d4c3be"
+							>
+								<img
+									src="./assets/images/featuredbottle1.png"
+									alt=" LA Ragnaie"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h2 class="card-title">La Ragnaie Brunello</h2>
+								<p class="card-text">
+									This is a wonderful black vest, which is well suited for
+									parties and also great industry. Lorem Ipsum has been the
+									industry's standard dummy text ever since the 1500s, when an
+									unknown printer took a galley of type and scrambled it to make
+									a type specimen book. It has survived not only five centuries,
+									but also the leap into elect
+								</p>
+								<div class="card-footer p-0">
+									<h5>$715</h5>
+									<button class="addbtn">Add to Cart</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card border-0">
+							<div
+								class="img-container text-center"
+								style="background: #4f4f4f"
+							>
+								<img
+									src="./assets/images/featuredbottle2.png"
+									alt=" Filippo Brunello Di Montalcino"
+									style="object-fit: cover"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h2 class="card-title">Filippo Brunello Di Montalcino</h2>
+								<p class="card-text">
+									This is a wonderful black vest, which is well suited for
+									parties and also great industry mmy text ever. Lorem Ipsum has
+									been the industry's standard dummy text ever since the 1500s,
+									when an unknown printer took a galley of type and scrambled it
+									to make a type specimen book. It has survived not only five
+									centuries, but also the leap into elect
+								</p>
+								<div class="card-footer p-0">
+									<h5>$1550</h5>
+									<button class="addbtn">Add to Cart</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card border-0">
+							<div
+								class="img-container text-center"
+								style="background: #4f4f4f"
+							>
+								<img
+									src="./assets/images/featuredbottle3.png"
+									alt=" LA Ragnaie"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h2 class="card-title">Brunello Montalcino Le</h2>
+								<p class="card-text">
+									This is a wonderful black vest, which is well suited for
+									parties and also great industry. Lorem Ipsum has been the
+									industry's standard dummy text ever since the 1500s, when an
+									unknown printer took a galley of type and scrambled it to make
+									a type specimen book. It has survived not only five centuries,
+									but also the leap into elect
+								</p>
+								<div class="card-footer p-0">
+									<h5>$540</h5>
+									<button class="addbtn">Add to Cart</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Categories to Bag -->
+
+		<section class="categories py-5">
+			<div class="container-xl">
+				<h3>Categories To Bag</h3>
+				<div class="row">
+					<div class="col-sm-6 pt-5">
+						<div class="card border-0 d-flex flex-row justify-content-between">
+							<div class="card-body">
+								<a href="#">Red Wine</a>
+								<h2>Pinot Griogio Primus</h2>
+								<span class="d-flex">
+									<p>$</p>
+									<h2>1610</h2></span
+								>
+								<a href="#" class="addbtn-lg">Shop Now</a>
+							</div>
+							<div class="img-container">
+								<img
+									src="./assets/images/category1.png"
+									alt=" Pinot Griogio
+							Primus"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pt-5">
+						<div class="card border-0 d-flex flex-row justify-content-between">
+							<div class="img-container">
+								<img
+									src="./assets/images/category2.png"
+									alt=" PL'Atelier du Sud"
+								/>
+							</div>
+							<div class="card-body align-content-end">
+								<a href="#">White Wine</a>
+								<h2>L'Atelier du Sud</h2>
+								<span class="d-flex">
+									<p>$</p>
+									<h2>640</h2></span
+								>
+								<a href="#" class="addbtn-lg">Shop Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pt-5">
+						<div class="card border-0 d-flex flex-row justify-content-between">
+							<div class="card-body">
+								<a href="#">Rosé</a>
+								<h2>Tomero Malbec Valentino</h2>
+								<span class="d-flex">
+									<p>$</p>
+									<h2>2630</h2></span
+								>
+								<a href="#" class="addbtn-lg">Shop Now</a>
+							</div>
+							<div class="img-container">
+								<img
+									src="./assets/images/category3.png"
+									alt="Tomero  Malbec
+Valentino"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pt-5">
+						<div class="card border-0 d-flex flex-row justify-content-between">
+							<div class="img-container">
+								<img
+									src="./assets/images/category4.png"
+									alt="Frontier 
+Justice 3L"
+								/>
+							</div>
+							<div class="card-body">
+								<a href="#">Sparkling</a>
+								<h2>Frontier Justice 3L</h2>
+								<span class="d-flex">
+									<p>$</p>
+									<h2>640</h2></span
+								>
+								<a href="#" class="addbtn-lg">Shop Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to action -->
+		<section
+			class="
+				cta
+				container-fluid
+				d-flex
+				flex-column
+				align-items-center
+				justify-content-around
+				position-relative
+			"
+		>
+			<div
+				class="
+					container-md
+					d-flex
+					flex-column
+					align-items-center
+					justify-content-around
+					pt-5
+				"
+			>
+				<h2>Our Wine Story</h2>
+				<p class="text-center pt-3" style="font-weight: 400">
+					Wine is one of life’s simple pleasures. Winc believes that the
+					experience of getting a great bottle of wine should be as simple as
+					enjoying one. Our team creates and curates over a hundred wines, and
+					makes the experience of exploring wine easy and pleasurable—So you can
+					spend more time enjoying the wine in your glass.
+				</p>
+				<div class="d-flex justify-content-between py-5">
+					<button class="addbtn mx-5">Learn More</button>
+					<button class="nooutline">Shop Wines</button>
+				</div>
+			</div>
+			<img
+				class="redcup"
+				src="./assets/images/openmoji_tropical-drink.png"
+				alt=""
+			/>
+			<img
+				class="yellowcup"
+				src="./assets/images/openmoji_tropical-drink (2).png"
+				alt=""
+			/>
+		</section>
+		<!--Gift actions -->
+		<section class="gift container-xl py-5">
+			<div class="row">
+				<div
+					class="
+						col-lg-4
+						d-flex
+						flex-column
+						justify-content-center
+						align-content-center
+					"
+				>
+					<h2>Send A Wine Gift</h2>
+					<p>
+						Merlot, chardonnay, or rosé? Let them choose with a Winc gift card,
+						because the gift of wine is perfect for any occasion.
+					</p>
+					<button class="nooutline-lg">Get Gifting</button>
+				</div>
+				<div class="col-lg-8 p-0">
+					<img
+						src="./assets/images/gift3.png"
+						alt="gift1"
+						style="width: 14rem; height: 14rem"
+					/>
+					<img
+						src="./assets/images/gift2.png"
+						alt="gift2"
+						style="width: 14rem; height: 14rem"
+					/>
+
+					<img
+						src="./assets/images/gift3.png"
+						alt="gift3"
+						style="width: 14rem; height: 14rem"
+					/>
+					<img
+						src="./assets/images/gift4.png"
+						alt="gift4"
+						style="width: 14rem; height: 14rem"
+					/>
+					<img
+						src="./assets/images/gift5.png"
+						alt="gift5"
+						style="width: 14rem; height: 14rem"
+					/>
+					<img
+						src="./assets/images/gift6.png"
+						alt="gift6"
+						style="width: 14rem; height: 14rem"
+					/>
+				</div>
+			</div>
+		</section>
+		<!-- Winde CLub -->
+
+		<section class="club container-fluid d-flex flex-column text-center pt-5">
+			<h2>Join The Wine Club</h2>
+
+			<div class="row justify-content-between">
+				<div class="col-lg-3">
+					<img src="./assets/images/WineCurate1.png" alt="gift6" />
+					<p>We Curate Your Wines</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="./assets/images/SelectYourPlan1.png" alt="gift6" />
+					<p>Select Your Plan</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="./assets/images/Enjoyyourexperience1.png" alt="gift6" />
+					<p>Enjoy Your Experience</p>
+				</div>
+			</div>
+			<h4>How It Works</h4>
+			<div class="container-md d-flex">
+				<img src="./assets/images/Home-Wine 1.png" alt="" />
+				<div
+					class="
+						container
+						align-content-center
+						d-flex
+						flex-column
+						text-left
+						justify-content-center
+					"
+				>
+					<h2>Cant Decide? We Can Help</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ante
+						volutpat, consequat ipsum vitae, efficitur sem. Mauris bibendum
+						interdum mi, eu ultrices odio convallis quis. Cras vestibulum
+						aliquet magna, quis dignissim arcu feugiat in. Praesent facilisis
+						dui et est feugiat, at egestas arcu volutpat. Duis eget mattis ante.
+					</p>
+					<button class="nooutline">Contact Us</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Order  Features -->
+
+		<section class="features container-lg pt-5 pb-4">
+			<hr />
+			<div class="pt-3 row justify-content-between">
+				<div class="col-lg-3 d-flex">
+					<img
+						src="./assets/images/track1.png"
+						alt=""
+						style="width: 3rem; height: 2rem; margin: 10px"
+					/>
+					<h4>Track Your Orders</h4>
+				</div>
+				<div class="col-lg-3 d-flex">
+					<img
+						src="./assets/images/track2.png"
+						alt=""
+						style="width: 3rem; height: 2rem; margin: 10px"
+					/>
+					<h4>Free & Easy Returns</h4>
+				</div>
+				<div class="col-lg-3 d-flex">
+					<img
+						src="./assets/images/track3.png"
+						alt=""
+						style="width: 3rem; height: 2rem; margin: 10px"
+					/>
+					<h4>Online Cancellation</h4>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section class="footer container-fluid">
+			<div class="container-lg pt-3">
+				<hr />
+				<div class="row pt-5">
+					<div class="col-lg-2">
+						<p class="list-title">Quick Links</p>
+						<br />
+						<ul>
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Red Wine</a>
+							</li>
+							<li>
+								<a href="#">White Wine</a>
+							</li>
+							<li>
+								<a href="#">Sparkling</a>
+							</li>
+							<li>
+								<a href="#">Rose</a>
+							</li>
+							<li>
+								<a href="#">Wine Club</a>
+							</li>
+							<li>
+								<a href="#">Services</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<p class="list-title">Help</p>
+						<br />
+						<ul>
+							<li>
+								<a href="#">Payments</a>
+							</li>
+							<li>
+								<a href="#">Shipping</a>
+							</li>
+							<li>
+								<a href="#">Cancellation & Return</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<p class="list-title">Contact Us</p>
+						<br />
+						<ul>
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li>
+								<a href="#">Work with Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 ml-auto">
+						<p class="list-title">Newsletter</p>
+						<br />
+						<p class="email mb-5">
+							Our email subscribers get the inside scoop on new products,
+							Promotions, Contests and more. Sign up, it's right thing to do.
+						</p>
+						<form>
+							<div class="input-group mb-2">
+								<input
+									type="text"
+									class="form-control"
+									id="inlineFormInputGroup"
+									placeholder="Username"
+								/>
+								<div class="input-group-prepend">
+									<div class="input-group-text border-0">
+										<i class="fas fa-paper-plane"></i>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr />
+				<div class="container d-flex justify-content-between p-0 mx-0">
+					<ul class="payment-links">
+						<li>
+							<div class="img-container">
+								<img
+									src="./assets/images/AmazonPayLogo-543.jpg"
+									alt="pay using amazon"
+								/>
+							</div>
+						</li>
+						<li>
+							<div class="img-container">
+								<img
+									src="./assets/images/discoverlogo.png"
+									alt="pay using amazon"
+								/>
+							</div>
+						</li>
+						<li>
+							<div class="img-container">
+								<img
+									src="./assets/images/amexlogo.jpg"
+									alt="pay using amazon"
+								/>
+							</div>
+						</li>
+						<li>
+							<div class="img-container">
+								<img
+									src="./assets/images/visalogo.jpg"
+									alt="pay using amazon"
+								/>
+							</div>
+						</li>
+						<li>
+							<div class="img-container">
+								<img
+									src="./assets/images/mastercardlogo.jpg"
+									alt="pay using amazon"
+								/>
+							</div>
+						</li>
+					</ul>
+					<ul class="socials">
+						<li><i class="fab fa-facebook-f"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+					</ul>
+				</div>
+
+				<hr />
+				<h4>Copyright © 2021 The Grape Escape. All Rights Reserved.</h4>
+			</div>
+		</section>
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+		<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+		<script>
+			new Glide(".glide", {
+				type: "carousel",
+				startAt: 1,
+				perView: 4,
+				breakpoints: {
+					1440: {
+						perView: 4,
+					},
+					1200: {
+						perView: 3,
+					},
+					1024: {
+						perView: 2,
+					},
+					600: {
+						perView: 1,
+					},
+				},
+			}).mount();
+		</script>
+	</body>
+</html>

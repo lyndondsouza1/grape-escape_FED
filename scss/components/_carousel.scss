@@ -1,0 +1,52 @@
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+@import "../utilities/breakpoints";
+
+.glide {
+	#{&}-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.glide__arrow {
+		padding: 20px;
+		button {
+			border: none;
+		}
+	}
+	.glide__arrow--left {
+		border: none;
+		background: none;
+	}
+	.glide__arrow--right {
+		border: none;
+		background: none;
+	}
+	.glide__bullet {
+		padding: 20px;
+		border: none;
+		background: none;
+	}
+	.carousel-card {
+		.img-container {
+			background: #4b293c;
+			box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			width: 18rem;
+			height: 18rem;
+			img {
+				object-fit: cover;
+			}
+		}
+		.card-body {
+			.card-text {
+				font-size: 14px;
+			}
+			.price {
+				font-size: 20px;
+				font-weight: 700;
+				padding-bottom: 1rem;
+				color: $primary-color;
+			}
+		}
+	}
+}

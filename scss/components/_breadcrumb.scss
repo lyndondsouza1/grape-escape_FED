@@ -1,0 +1,22 @@
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">";
+}
+
+.breadcrumb-item a {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #211f1f;
+}
+
+.breadcrumb {
+	// display: flex;
+	// margin-left: auto;
+	// margin-right: auto;
+	// align-self: center;
+	background: #efd188;
+	border-radius: 3px;
+	height: auto;
+	// width: 80%;
+}

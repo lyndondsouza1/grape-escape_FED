@@ -1,0 +1,11 @@
+@import "../utilities/variables";
+@import "../utilities/breakpoints";
+
+.explore {
+	h3 {
+		font-family: $nunito;
+	}
+	.top-card {
+		max-height: 22rem;
+	}
+}

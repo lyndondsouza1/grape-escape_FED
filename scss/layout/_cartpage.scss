@@ -1,0 +1,96 @@
+@import "../components/breadcrumb";
+@import "../utilities/variables";
+@import "../utilities/breakpoints";
+@import "../components/checkbox";
+.deliver {
+	ul {
+		margin: 0px;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		li {
+		}
+		.price {
+			margin-left: auto;
+			padding: 10px;
+			font-size: 25px;
+			line-height: 29px;
+			text-align: right;
+
+			color: #211f1f;
+		}
+		.card-body {
+			h2 {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				/* identical to box height, or 150% */
+
+				color: #211f1f;
+			}
+		}
+	}
+
+	.img-container {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		width: 6.5rem;
+		height: 6.5rem;
+		object-fit: fill;
+		background: #ffffff;
+		border: 1px solid #dedcdc;
+		margin: 10px;
+		img {
+			object-position: center;
+		}
+	}
+	.cardfooter {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		align-items: center;
+		.vl {
+			border-left: 1px solid rgba(128, 128, 128, 0.507);
+			height: 40px;
+		}
+		span {
+			padding: 1rem 2rem 2rem;
+			font-family: $nunito;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 145.6%;
+			/* identical to box height, or 23px */
+
+			/* Gray 4 */
+
+			color: #495057;
+		}
+	}
+}
+.price-list {
+	li {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		/* identical to box height */
+
+		text-align: center;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h3 {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+	}
+}

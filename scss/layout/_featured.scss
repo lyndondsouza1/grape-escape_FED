@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+@import "../utilities/breakpoints";
+
+.featured {
+	h3 {
+		font-family: $nunito;
+		font-weight: 400;
+		font-size: 2rem;
+	}
+	h2 {
+		font-family: $nunito;
+		font-weight: 400;
+		size: 38px;
+	}
+	.card {
+		display: flex;
+		justify-content: flex-end;
+		.img-container {
+			height: 18rem;
+			border-radius: 16px 16px 0px 0px;
+			img {
+				height: 15rem;
+			}
+		}
+		.card-body {
+			.card-text {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-height: 2.4em;
+				line-height: 1.2em;
+			}
+			h2 {
+				font-family: $roboto;
+				font-weight: 400;
+				line-height: 45px;
+				font-size: 38px;
+			}
+			.card-footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				background: none;
+				align-items: center;
+				border: 0;
+			}
+		}
+	}
+}

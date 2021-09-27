@@ -1,0 +1,21 @@
+@import "../utilities/variables";
+@import "../components/button";
+@import "../utilities/breakpoints";
+
+.cta {
+	font-family: $nunito;
+	background: #d4c3be;
+	height: 50vh;
+	.addbtn {
+		background: #d4c3be;
+	}
+}
+.redcup {
+	position: absolute;
+	left: 0;
+}
+.yellowcup {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}

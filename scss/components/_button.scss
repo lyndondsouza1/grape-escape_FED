@@ -1,0 +1,94 @@
+@import "../utilities/variables";
+@import "../utilities/breakpoints";
+
+.addbtn {
+	font-family: "Roboto";
+	height: 4rem;
+	color: $primary-color;
+	border-radius: 8px;
+	line-height: 18.5px;
+	padding: 0px 10px;
+	font-size: 16px;
+	outline: none;
+	border-radius: 8px;
+	border: 2px solid $primary-color;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background: #fff;
+}
+.addbtn-lg {
+	font-family: "Roboto";
+	background: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	height: 3.25rem;
+	border-radius: 16px;
+	border: 2px solid $primary-color;
+	color: $primary-color;
+	text-align: center;
+	line-height: 50px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.nooutline {
+	font-family: "Roboto";
+
+	width: 11.3rem;
+	height: 4rem;
+	background: $primary-color;
+	color: #fff;
+	outline: none;
+	border-radius: 8px;
+	line-height: 18.5px;
+	padding: 1rem 2rem 1rem;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: none;
+	border-color: transparent;
+}
+.nooutline-lg {
+	font-family: "Roboto";
+	font-weight: 700;
+	height: 4rem;
+
+	width: 10rem;
+	background: $primary-color;
+	color: #fff;
+	outline: none;
+	border-radius: 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	box-shadow: none;
+	border-color: transparent;
+}
+.nooutline:active {
+	outline: none;
+	border: 0;
+	border-color: transparent;
+	cursor: pointer;
+}
+.nooutline-lg:active {
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	box-shadow: none;
+	border-color: transparent;
+}
+.nooutline-lg:visited {
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	border-color: transparent;
+}
