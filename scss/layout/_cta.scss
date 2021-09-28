@@ -6,6 +6,7 @@
 	font-family: $nunito;
 	background: #d4c3be;
 	
+	height: 70vh;
 }
 .redcup {
 	position: absolute;
@@ -20,9 +21,20 @@
 }
 
 @include lg {
+.cta {
+	font-family: $nunito;
+	background: #d4c3be;
+	
+	height: 40vh;
+}
+	.cta button {
+						padding: 0.5rem 2rem 0.5rem;
+
+	}
 	.redcup {
 	position: absolute;
 	left: 0;
+	top: 10px;
 }
 .yellowcup {
 	position: absolute;

@@ -21639,38 +21639,22 @@ a.text-dark:hover, a.text-dark:focus {
   background: #939458;
 }
 
-.navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.808);
-}
-
-.navbar-nav a:nth-of-type(4) {
-  display: none;
-}
-
-.navbar-nav a:nth-of-type(5) {
-  margin-left: 0;
-}
-
-.navbar-nav a:nth-of-type(4) {
-  margin-left: auto;
-}
-
-.navbar-nav a:nth-of-type(7) {
+.site-header a:nth-of-type(7) {
   position: relative;
 }
 
-.navbar-nav a:nth-of-type(7) .badge {
+.site-header a:nth-of-type(7) .badge {
   padding-left: 9px;
   padding-right: 9px;
   border-radius: 9px;
 }
 
-.navbar-nav a:nth-of-type(7) .label-warning[href],
-.navbar-nav a:nth-of-type(7) .badge-warning[href] {
+.site-header a:nth-of-type(7) .label-warning[href],
+.site-header a:nth-of-type(7) .badge-warning[href] {
   background-color: #c67605;
 }
 
-.navbar-nav a:nth-of-type(7) #lblCartCount {
+.site-header a:nth-of-type(7) #lblCartCount {
   font-size: 12px;
   background: #ff0000;
   color: #fff;
@@ -21678,7 +21662,8 @@ a.text-dark:hover, a.text-dark:focus {
   border: 2px solid #fff;
   position: absolute;
   top: -5px;
-  right: 27px;
+  right: -20px;
+  padding: 5px 5px;
 }
 
 nav {
@@ -21694,15 +21679,6 @@ nav .navbar-toggler span {
   z-index: 1;
   color: #000000;
   fill: #000000;
-}
-
-@media (min-width: 992px) {
-  .navbar-nav a:nth-of-type(4) {
-    display: block;
-  }
-  .navbar-nav a:nth-of-type(5) {
-    margin-left: auto;
-  }
 }
 
 /*!
@@ -32520,11 +32496,18 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
-.hero .container-fluid img, .hero .container-sm img, .hero .container-md img, .hero .container-lg img, .hero .container-xl img {
-  width: 100vw;
-  max-height: 70vh;
-  -o-object-fit: fill;
-     object-fit: fill;
+.herot {
+  background-image: url("../../assets/images/Home1.png");
+  height: 90vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .herot {
+    background-size: cover;
+  }
 }
 
 .glide {
@@ -98322,6 +98305,7 @@ a.text-dark:hover, a.text-dark:focus {
 .cta {
   font-family: "Nunito", serif;
   background: #d4c3be;
+  height: 70vh;
 }
 
 .redcup {
@@ -98337,9 +98321,18 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (min-width: 992px) {
+  .cta {
+    font-family: "Nunito", serif;
+    background: #d4c3be;
+    height: 40vh;
+  }
+  .cta button {
+    padding: 0.5rem 2rem 0.5rem;
+  }
   .redcup {
     position: absolute;
     left: 0;
+    top: 10px;
   }
   .yellowcup {
     position: absolute;
@@ -120336,8 +120329,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .gift img {
-    width: 13rem;
-    height: 13rem;
     -webkit-transition: -webkit-transform 250ms;
     transition: -webkit-transform 250ms;
     transition: transform 250ms;

@@ -10,19 +10,10 @@
 	align-items: center;
 	background: $primary-color;
 
-	.nav-link {
-		color: $secondary-color;
-	}
-	a:nth-of-type(4) {
-		display: none;
-	}
-	a:nth-of-type(5) {
-		margin-left: 0;
-	}
+}
+.site-header {
 
-	a:nth-of-type(4) {
-		margin-left: auto;
-	}
+	
 	a:nth-of-type(7) {
 		position: relative;
 	.badge {
@@ -45,7 +36,8 @@
 	border :2px solid #fff;
     position: absolute;
   top: -5px;
-  right: 27px;
+  right: -20px;
+  padding: 5px 5px;
 }
 	}
 }
@@ -63,12 +55,5 @@ nav {
 }
 
 @include lg {
-	.navbar-nav {
-		a:nth-of-type(4) {
-			display: block;
-		}
-		a:nth-of-type(5) {
-		margin-left: auto;
-	}
-	}
+	
 }
