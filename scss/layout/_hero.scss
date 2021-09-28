@@ -1,12 +1,19 @@
 @import "../utilities/variables";
 @import "../utilities/breakpoints";
 
-.hero {
-	.container-fluid {
-		img {
-			width: 100vw;
-			max-height: 70vh;
-			object-fit: fill;
-		}
-	}
+.herot {
+	background-image: url("../../assets/images/Home1.png");
+
+	height: 90vh;
+	background-position:bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+@include lg {
+.herot {
+	
+	background-size: cover;
+}
+
 }

@@ -9,7 +9,9 @@
 		/>
 
 		<!-- Bootstrap CSS -->
-		<!-- <link
+		<!-- cdn is faster at compile time -->
+<!-- 
+		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
@@ -23,50 +25,44 @@
 		<title>View Cart</title>
 	</head>
 	<body>
-		<nav class="navbar container-fluid navbar-expand-lg p-0">
-			<a class="navbar-brand" href="#"></a>
-			<button
-				class="navbar-toggler float-right"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon">
-					<i class="fa fa-bars" aria-hidden="true"></i
-				></span>
-			</button>
-			<div class="collapse navbar-collapse p-0" id="navbarNavAltMarkup">
-				<div class="navbar-nav px-5">
-					<a class="nav-link active px-lg-5" href="#"
-						>Red Wine <span class="sr-only">(current)</span></a
+			<header>
+			<nav class="site-header py-1">
+				<div
+					class="
+						container
+						d-flex
+						flex-column flex-md-row
+						justify-content-between
+						align-items-center
+					"
+				>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">Red Wine</a>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">White Wine</a>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">Rose</a>
+					<a class="py-2 text-decoration-none" href="#" aria-label="Product">
+						<img src="./assets/images/header.png" alt="" />
+					</a>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">Search</a>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">Sign In</a>
+					<a class="py-2 d-none d-md-inline-block text-decoration-none" href="#"
+						><i class="fas fa-shopping-cart"></i>
+						<span class="badge badge-warning" id="lblCartCount">2</span></a
 					>
-					<a class="nav-link px-5" href="#"> White Wine</a>
-					<a class="nav-link px-5" href="#">Rose</a>
-					<a class="nav-link px-5" href="#"
-						><img src="./assets/images/header.png" alt=""
-					/></a>
-
-					<a class="nav-link px-5" href="#">Search</a>
-					<a class="nav-link px-5" href="#">Sign In</a>
-					<a class="nav-link px-5" href="./cartpage.html">
-						<i class="fas fa-shopping-cart"></i
-					>
-				<span class='badge badge-warning' id='lblCartCount'> 2 </span></a>
 				</div>
-			</div>
-		</nav>
+			</nav>
 		<!-- breadcrumbs  -->
 
-		<nav class="breadcrumb container-xl mt-5" aria-label="breadcrumb">
+				<nav class="breadcrumb container-xl mt-5" aria-label="breadcrumb">
 			<ol class="breadcrumb mb-0">
 				<li class="breadcrumb-item"><a href="#">Home</a></li>
 				<li class="breadcrumb-item"><a href="#">Product</a></li>
 				<li class="breadcrumb-item active" aria-current="page">View Cart</li>
 			</ol>
 		</nav>
+		</header>
+		<!-- breadcrumbs  -->
+
+	
 		<!-- address card /ordercard / placeorder  -->
 		<section class="deliver container-xl mt-5 px-0">
 			<div class="row">
@@ -363,7 +359,7 @@ border-radius: 16px;"
 								</span>
 							</li>
 							<li>
-								<a href="./orderplaced.html" class=" mt-5 btn btn-lg w-100" style="font-weight: 500;
+								<a href="./orders.html" class=" mt-5 btn btn-lg w-100" style="font-weight: 500;
 font-size: 18px;
 line-height: 21px;
 text-align: center;
@@ -382,7 +378,7 @@ color: #FFFFFF;"> Place Order</a>
 		<!-- You Might also Like -->
 			<section class="featured pt-5">
 			<div class="container-xl">
-				<h3>Featured Wines</h3>
+				<h3>You Might Also Like</h3>
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="card border-0">
@@ -523,7 +519,7 @@ color: #FFFFFF;"> Place Order</a>
 			</div>
 		</section>
 		<!-- Footer -->
-		<section class="footer container-fluid">
+		<footer class="footer container-fluid">
 			<div class="container-lg pt-3">
 				<hr />
 				<div class="row pt-5">
@@ -612,7 +608,16 @@ color: #FFFFFF;"> Place Order</a>
 					</div>
 				</div>
 				<hr />
-				<div class="container d-flex justify-content-between p-0 mx-0">
+				<div
+					class="
+						container
+						d-flex
+						flex-column flex-sm-row
+						justify-content-between
+						p-0
+						mx-0
+					"
+				>
 					<ul class="payment-links">
 						<li>
 							<div class="img-container">
@@ -626,31 +631,25 @@ color: #FFFFFF;"> Place Order</a>
 							<div class="img-container">
 								<img
 									src="./assets/images/discoverlogo.png"
-									alt="pay using amazon"
+									alt="pay using discover"
 								/>
 							</div>
 						</li>
 						<li>
 							<div class="img-container">
-								<img
-									src="./assets/images/amexlogo.jpg"
-									alt="pay using amazon"
-								/>
+								<img src="./assets/images/amexlogo.jpg" alt="pay using amex" />
 							</div>
 						</li>
 						<li>
 							<div class="img-container">
-								<img
-									src="./assets/images/visalogo.jpg"
-									alt="pay using amazon"
-								/>
+								<img src="./assets/images/visalogo.jpg" alt="pay using visa" />
 							</div>
 						</li>
 						<li>
 							<div class="img-container">
 								<img
 									src="./assets/images/mastercardlogo.jpg"
-									alt="pay using amazon"
+									alt="pay using mastercard"
 								/>
 							</div>
 						</li>
@@ -665,7 +664,7 @@ color: #FFFFFF;"> Place Order</a>
 				<hr />
 				<h4>Copyright © 2021 The Grape Escape. All Rights Reserved.</h4>
 			</div>
-		</section>
+		</footer>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
