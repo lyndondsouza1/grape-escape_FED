@@ -5,12 +5,22 @@
 .cta {
 	font-family: $nunito;
 	background: #d4c3be;
-	height: 50vh;
-	.addbtn {
-		background: #d4c3be;
-	}
+	
 }
 .redcup {
+	position: absolute;
+	bottom:0;
+	left: 0;
+}
+.yellowcup {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+
+@include lg {
+	.redcup {
 	position: absolute;
 	left: 0;
 }
@@ -18,4 +28,5 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
 }

@@ -9,45 +9,60 @@
 		line-height: 40px;
 	}
 
-	.col-sm-6:nth-of-type(1) .card {
-		height: 21.25rem;
-		background: rgb(239, 209, 136);
-		background: linear-gradient(
-			270deg,
-			rgba(239, 209, 136, 1) 40%,
-			rgba(255, 255, 255, 1) 60%
-		);
-		border-radius: 0px 16px 16px 0px;
+	.col-sm-6:nth-of-type(1) {
+		padding: 0;
+		.card {
+			height: 21.25rem;
+			background: rgb(239, 209, 136);
+			background: linear-gradient(
+				270deg,
+				rgba(239, 209, 136, 1) 40%,
+				rgba(255, 255, 255, 1) 60%
+			);
+			border-radius: 0px 16px 16px 0px;
+		}
 	}
-	.col-sm-6:nth-of-type(2) .card {
-		height: 21.25rem;
-		background: rgb(244, 232, 190);
-		background: linear-gradient(
-			90deg,
-			rgba(244, 232, 190, 1) 40%,
-			rgba(255, 255, 255, 1) 60%
-		);
-		border-radius: 16px 0px 0px 16px;
+	.col-sm-6:nth-of-type(2) {
+		padding: 0;
+
+		.card {
+			height: 21.25rem;
+			background: rgb(244, 232, 190);
+			background: linear-gradient(
+				90deg,
+				rgba(244, 232, 190, 1) 40%,
+				rgba(255, 255, 255, 1) 60%
+			);
+			border-radius: 16px 0px 0px 16px;
+		}
 	}
-	.col-sm-6:nth-of-type(3) .card {
-		height: 21.25rem;
-		background: rgb(212, 195, 190);
-		background: linear-gradient(
-			270deg,
-			rgba(212, 195, 190, 1) 40%,
-			rgba(255, 255, 255, 1) 60%
-		);
-		border-radius: 0px 16px 16px 0px;
+	.col-sm-6:nth-of-type(3) {
+		padding: 0;
+
+		.card {
+			height: 21.25rem;
+			background: rgb(212, 195, 190);
+			background: linear-gradient(
+				270deg,
+				rgba(212, 195, 190, 1) 40%,
+				rgba(255, 255, 255, 1) 60%
+			);
+			border-radius: 0px 16px 16px 0px;
+		}
 	}
-	.col-sm-6:nth-of-type(4) .card {
-		height: 21.25rem;
-		background: rgb(147, 148, 88);
-		background: linear-gradient(
-			90deg,
-			rgba(147, 148, 88, 1) 40%,
-			rgba(255, 255, 255, 1) 60%
-		);
-		border-radius: 16px 0px 0px 16px;
+	.col-sm-6:nth-of-type(4) {
+		padding: 0;
+
+		.card {
+			height: 21.25rem;
+			background: rgb(147, 148, 88);
+			background: linear-gradient(
+				90deg,
+				rgba(147, 148, 88, 1) 40%,
+				rgba(255, 255, 255, 1) 60%
+			);
+			border-radius: 16px 0px 0px 16px;
+		}
 	}
 	.card-body {
 		display: flex;
@@ -72,12 +87,25 @@
 			color: $primary-color;
 		}
 	}
+	.card {
+		transition: transform 250ms;
+	}
 	.card:hover {
 		color: $primary-color;
-		.card-body {
-			a:nth-of-type(1) {
-				color: $primary-color;
-			}
+		transform: translateY(-10px);
+	}
+
+	.card-body {
+		a:nth-of-type(1) {
+			color: $primary-color;
+		}
+	}
+}
+@include lg {
+	.categories {
+		.card {
+			padding : 0 20px;
+			margin: 10px;
 		}
 	}
 }

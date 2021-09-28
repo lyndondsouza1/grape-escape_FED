@@ -1,6 +1,9 @@
 @import "../utilities/variables";
+@import "../utilities/breakpoints";
+@import "../utilities/mixins";
 
 .navbar-nav {
+	background: $primary-color;
 	display: flex;
 	flex-grow: 1;
 	justify-content: space-between;
@@ -10,11 +13,62 @@
 	.nav-link {
 		color: $secondary-color;
 	}
+	a:nth-of-type(4) {
+		display: none;
+	}
 	a:nth-of-type(5) {
-		margin-left: auto;
+		margin-left: 0;
 	}
 
 	a:nth-of-type(4) {
 		margin-left: auto;
+	}
+	a:nth-of-type(7) {
+		position: relative;
+	.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+	border-radius: 50%;
+	border :2px solid #fff;
+    position: absolute;
+  top: -5px;
+  right: 27px;
+}
+	}
+}
+nav {
+	background: $primary-color;
+	.navbar-toggler {
+		color: #000000;
+			fill: #000000;
+		span {
+			z-index: 1;
+			color: #000000;
+			fill: #000000;
+		}
+	}
+}
+
+@include lg {
+	.navbar-nav {
+		a:nth-of-type(4) {
+			display: block;
+		}
+		a:nth-of-type(5) {
+		margin-left: auto;
+	}
 	}
 }

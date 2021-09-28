@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/breakpoints";
-
+@import "../utilities/mixins";
 .footer {
 	background: #efd18842;
 
@@ -57,8 +57,8 @@
 			background: #ffffff;
 			border: 0.56px solid #c0c0c0;
 			border-radius: 1.68px;
-			width: 4rem;
-			height: 2rem;
+			width: 2rem;
+				height: 2rem;
 			object-fit: cover;
 
 			img {
@@ -85,5 +85,25 @@
 		font-size: 14px;
 		font-weight: 700px;
 		color: #4f4f4f;
+	}
+}
+
+@include lg {
+	.footer {
+		.payment-links {
+		
+			.img-container {
+			
+				width: 4rem;
+				height: 2rem;
+				object-fit: cover;
+
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
 	}
 }

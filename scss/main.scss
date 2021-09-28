@@ -11,6 +11,7 @@
 @import "./layout/club";
 @import "./utilities/breakpoints";
 @import "./layout/cartpage";
+
 body {
 	height: 100vh;
 	font-family: $roboto;
@@ -26,4 +27,11 @@ h3 {
 a {
 	color: #fff;
 	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
 }
