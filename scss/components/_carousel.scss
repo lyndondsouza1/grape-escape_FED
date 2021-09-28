@@ -3,12 +3,14 @@
 
 .glide {
 	#{&}-header {
+		text-align: center;
+		align-items:center;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.glide__arrow {
-		padding: 20px;
+		padding: 10px;
 		button {
 			border: none;
 		}
@@ -22,7 +24,7 @@
 		background: none;
 	}
 	.glide__bullet {
-		padding: 20px;
+		padding: 10px;
 		border: none;
 		background: none;
 	}
@@ -49,4 +51,32 @@
 			}
 		}
 	}
+}
+@include lg {
+.glide {
+	#{&}-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.glide__arrow {
+		padding: 10px;
+		button {
+			border: none;
+		}
+	}
+	.glide__arrow--left {
+		border: none;
+		background: none;
+	}
+	.glide__arrow--right {
+		border: none;
+		background: none;
+	}
+	.glide__bullet {
+		padding: 10px;
+		border: none;
+		background: none;
+	}
+}
 }

@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap");
-
+@import "../../node_modules/bootstrap/scss/bootstrap";
 $roboto: "Roboto", serif;
 $nunito: "Nunito", serif;
 
 $primary-color: #939458;
-$secondary-color: #000000;
+$secondary-color: hsla(0, 0%, 0%, 0.808);
 
+
+$theme-colors : (
+	'primary' : #939458,
+	'secondary' : #000001
+);
 * {
 	box-sizing: border-box;
 	margin: 0;
