@@ -1,7 +1,7 @@
 new Glide(".glide", {
 	type: "carousel",
-	gap: 20,
-	startAt: 1,
+	gap: 0,
+	startAt: 0,
 	perView: 4,
 	breakpoints: {
 		1440: {
