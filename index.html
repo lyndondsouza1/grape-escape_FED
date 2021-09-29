@@ -8,7 +8,7 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 
-		<!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS or scss -->
 		<!-- cdn is faster at compile time -->
 
 		<!-- <link
@@ -16,13 +16,10 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 			crossorigin="anonymous"
-		/> -->
-		<script
-			src="https://kit.fontawesome.com/f5ec34d7b0.js"
-			crossorigin="anonymous"
-		></script>
+		/>
+	 -->
 		<link rel="stylesheet" href="/css/main.css" />
-		<title>taskhomepage</title>
+		<title>task homepage</title>
 	</head>
 	<body>
 	
@@ -91,8 +88,8 @@
 					</div>
 
 					<div class="glide__track p-0 m-0" data-glide-el="track">
-						<ul class="glide__slides p-0">
-							<li class="glide__slide p-0 mx-3">
+						<ul class="glide__slides ">
+							<li class="glide__slide ">
 								<div class="card border-0 text-center carousel-card">
 									<div class="img-container">
 										<img
@@ -113,7 +110,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="glide__slide p-0 mx-3">
+							<li class="glide__slide ">
 								<div class="card border-0 text-center carousel-card">
 									<div class="img-container" style="background: #d4c3be">
 										<img
@@ -134,7 +131,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="glide__slide p-0 mx-3">
+							<li class="glide__slide ">
 								<div class="card border-0 text-center carousel-card">
 									<div class="img-container" style="background: #f4e8be">
 										<img
@@ -155,12 +152,98 @@
 									</div>
 								</div>
 							</li>
-							<li class="glide__slide p-0 mx-3">
+							<li class="glide__slide ">
 								<div class="card border-0 text-center carousel-card">
 									<div class="img-container" style="background: #d4c3be">
 										<img
 											src="./assets/images/bestseller4.png"
 											alt="Pietrarizzo Etna Rosso"
+											class="img-fluid"
+										/>
+									</div>
+
+									<div class="card-body">
+										<p class="card-text">Pietrarizzo Etna Rosso</p>
+										<p class="price">$499</p>
+										<a
+											href="./cart.html"
+											class="btn btn-lg btn-primary"
+											style="padding: 0.5rem 2rem 0.5rem"
+											>Add to Cart</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide ">
+								<div class="card border-0 text-center carousel-card">
+									<div class="img-container">
+										<img
+											src="./assets/images/bestseller1.png"
+											alt="Bran caia 2018"
+										/>
+									</div>
+
+									<div class="card-body">
+										<p class="card-text">Bran Caia 2018</p>
+										<p class="price">$199</p>
+										<a
+											href="./cart.html"
+											class="btn btn-lg btn-primary"
+											style="padding: 0.5rem 2rem 0.5rem"
+											>Add to Cart</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide ">
+								<div class="card border-0 text-center carousel-card">
+									<div class="img-container" style="background: #d4c3be">
+										<img
+											src="./assets/images/bestseller2.png"
+											alt="Vinologist Cabernet "
+										/>
+									</div>
+
+									<div class="card-body">
+										<p class="card-text">Vinologist Cabernet</p>
+										<p class="price">$299</p>
+										<a
+											href="./cart.html"
+											class="btn btn-lg btn-primary"
+											style="padding: 0.5rem 2rem 0.5rem"
+											>Add to Cart</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide ">
+								<div class="card border-0 text-center carousel-card">
+									<div class="img-container" style="background: #f4e8be">
+										<img
+											src="./assets/images/bestseller3.png"
+											alt="Scaia Rosato Veneto"
+										/>
+									</div>
+
+									<div class="card-body">
+										<p class="card-text">Scaia Rosato Veneto</p>
+										<p class="price">$399</p>
+										<a
+											href="./cart.html"
+											class="btn btn-lg btn-primary"
+											style="padding: 0.5rem 2rem 0.5rem"
+											>Add to Cart</a
+										>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide ">
+								<div class="card border-0 text-center carousel-card">
+									<div class="img-container" style="background: #d4c3be">
+										<img
+											src="./assets/images/bestseller4.png"
+											alt="Pietrarizzo Etna Rosso"
+											class="img-fluid"
 										/>
 									</div>
 
@@ -568,7 +651,7 @@ Justice 3L"
 					</div>
 				</div>
 			</section>
-			<!-- Winde CLub -->
+			<!-- Wine CLub -->
 
 			<section class="club container-fluid d-flex flex-column text-center pt-5">
 				<h2>Join The Wine Club</h2>
@@ -809,9 +892,10 @@ Justice 3L"
 				<h4>Copyright © 2021 The Grape Escape. All Rights Reserved.</h4>
 			</div>
 		</footer>
-		<!-- Optional JavaScript; choose one of the two! -->
-
-		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+			<script
+			src="https://kit.fontawesome.com/f5ec34d7b0.js"
+			crossorigin="anonymous"
+		></script>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -823,33 +907,10 @@ Justice 3L"
 			crossorigin="anonymous"
 		></script>
 
-		<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+		
 		<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-		<script>
-			new Glide(".glide", {
-				type: "carousel",
-				gap: 20,
-				startAt: 1,
-				perView: 4,
-				breakpoints: {
-					1440: {
-						perView: 4,
-					},
-					1200: {
-						perView: 3,
-					},
-					1024: {
-						perView: 2,
-					},
-					600: {
-						perView: 1,
-					},
-				},
-			}).mount();
+		<script src="./js/glidesettings.js">
+			
 		</script>
 	</body>
 </html>

@@ -12,7 +12,12 @@
 
 }
 .site-header {
-
+	a {
+		color: #000000;
+	}
+ a:hover {
+	 color: #fff;
+ }
 	
 	a:nth-of-type(7) {
 		position: relative;

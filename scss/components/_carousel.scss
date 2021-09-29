@@ -4,7 +4,7 @@
 .glide {
 	#{&}-header {
 		text-align: center;
-		align-items:center;
+		align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -29,11 +29,14 @@
 		background: none;
 	}
 	.carousel-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.img-container {
 			background: #4b293c;
 			box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
 			border-radius: 5px;
-			width: 18rem;
+			width: 14rem;
 			height: 18rem;
 			img {
 				object-fit: cover;
@@ -53,30 +56,49 @@
 	}
 }
 @include lg {
-.glide {
-	#{&}-header {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.glide__arrow {
-		padding: 10px;
-		button {
+	.glide {
+		#{&}-header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.glide__arrow {
+			color: grey;
+			padding: 10px;
+			button {
+				border: none;
+			}
+		}
+		.glide__arrow--left {
+			color: grey;
+
 			border: none;
+			background: none;
+		}
+		.glide__arrow--right {
+			color: grey;
+
+			border: none;
+			background: none;
+		}
+		.glide__bullet {
+			
+			display: inline-block;
+		
+
+			color: grey;
+
+			padding: 10px;
+		}
+		.glide__bullet--active {
+			
+			display: inline-block;
+			border: 1px solid #000000;
+			border-radius: 50%;
+
+			color: grey;
+
+			padding: 10px;
 		}
 	}
-	.glide__arrow--left {
-		border: none;
-		background: none;
-	}
-	.glide__arrow--right {
-		border: none;
-		background: none;
-	}
-	.glide__bullet {
-		padding: 10px;
-		border: none;
-		background: none;
-	}
-}
 }
